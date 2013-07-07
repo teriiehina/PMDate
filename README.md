@@ -36,8 +36,9 @@ Hit Command-U in Xcode
 
 ## Credits
 
-Subscripting in Objective-C is the work of the LLVW team (I guess)
-NSDate is the work of Apple (according to NSDate.h)
+  - Subscripting in Objective-C is the work of the LLVW team (I guess)
+  - NSDate is the work of Apple (according to NSDate.h)
+  - The structure of this file is (very) strongly inspired from [this post](http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/)
 
 ## License
 
