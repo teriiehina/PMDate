@@ -53,6 +53,34 @@
     XCTAssertTrue( elapsed == expected , @"%d seconds should separate yesterday from today, not %d" , expected , elapsed);
 }
 
+- (void)testTwoSecondsAgo
+{
+    NSDate *someTimeAgo = self.now[@"2 seconds ago"];
+    int elapsed         = (int) [self.now timeIntervalSinceDate:someTimeAgo];
+    int expected        = 2;
+    
+    XCTAssertTrue( elapsed == expected , @"%d seconds should have elapsed, not %d" , expected , elapsed);
+}
+
+- (void)testTwoSecondsAhead
+{
+    NSDate *someTimeAgo = self.now[@"2 seconds ahead"];
+    int elapsed         = (int) [self.now timeIntervalSinceDate:someTimeAgo];
+    int expected        = -2;
+    
+    XCTAssertTrue( elapsed == expected , @"%d seconds should have elapsed, not %d" , expected , elapsed);
+}
+
+- (void)testTwoSecondsAheadWithTypo
+{
+    NSDate *someTimeAgo = self.now[@"2 second ahead"];
+    int elapsed         = (int) [self.now timeIntervalSinceDate:someTimeAgo];
+    int expected        = -2;
+    
+    XCTAssertTrue( elapsed == expected , @"%d seconds should have elapsed, not %d" , expected , elapsed);
+}
+
+
 - (void)testTwoHoursAgo
 {
     NSDate *someTimeAgo = self.now[@"2 hours ago"];
