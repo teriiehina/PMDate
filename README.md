@@ -13,14 +13,14 @@ PMDate is a category adding subscripting to NSDate to use litteral date modifier
 
 ### Manually
 
-  1. Drag'n'drop PMDate.h and PMDate.m wherever you want in your xcode project
-  2. add `#import <PMDate/PMDate.h>` to the source files where you want to use PMDate.
+  1. Drag'n'drop `PMDate.h` and `PMDate.m` wherever you want in your xcode project
+  2. add `#import <PMDate/NSDate+PMDate.h>` to the source files where you want to use PMDate.
 
 ### Cocoapods
 
   1. add `pod 'PMDate' , :git => "https://github.com/teriiehina/PMDate"` to your Podfile
   2. run `pod install`
-  3. add `#import <PMDate/PMDate.h>` to the source files where you want to use PMDate.
+  3. add `#import <PMDate/NSDate+PMDate.h>` to the source files where you want to use PMDate.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ See CONTRIBUTING file.
 
 ## Running the Tests
 
-Hit Command-U in Xcode
+Hit Command-U in Xcode.
 
 ## Credits
 
