@@ -14,6 +14,9 @@
 		D7BDEC3A1789647A009D830C /* libPMDate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDEC211789647A009D830C /* libPMDate.a */; };
 		D7BDEC401789647A009D830C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7BDEC3E1789647A009D830C /* InfoPlist.strings */; };
 		D7BDEC421789647A009D830C /* PMDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BDEC411789647A009D830C /* PMDateTests.m */; };
+		D7BDEC4D178964C3009D830C /* NSDate+PMDate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7BDEC4B178964C3009D830C /* NSDate+PMDate.h */; };
+		D7BDEC4E178964C3009D830C /* NSDate+PMDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BDEC4C178964C3009D830C /* NSDate+PMDate.m */; };
+		D7BDEC4F17896665009D830C /* NSDate+PMDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BDEC4C178964C3009D830C /* NSDate+PMDate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,8 @@
 		D7BDEC3D1789647A009D830C /* PMDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PMDateTests-Info.plist"; sourceTree = "<group>"; };
 		D7BDEC3F1789647A009D830C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7BDEC411789647A009D830C /* PMDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMDateTests.m; sourceTree = "<group>"; };
+		D7BDEC4B178964C3009D830C /* NSDate+PMDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+PMDate.h"; sourceTree = "<group>"; };
+		D7BDEC4C178964C3009D830C /* NSDate+PMDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+PMDate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,8 @@
 			children = (
 				D7BDEC2D1789647A009D830C /* PMDate.h */,
 				D7BDEC2E1789647A009D830C /* PMDate.m */,
+				D7BDEC4B178964C3009D830C /* NSDate+PMDate.h */,
+				D7BDEC4C178964C3009D830C /* NSDate+PMDate.m */,
 				D7BDEC2B1789647A009D830C /* Supporting Files */,
 			);
 			path = PMDate;
@@ -146,6 +153,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BDEC4D178964C3009D830C /* NSDate+PMDate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BDEC2F1789647A009D830C /* PMDate.m in Sources */,
+				D7BDEC4E178964C3009D830C /* NSDate+PMDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BDEC421789647A009D830C /* PMDateTests.m in Sources */,
+				D7BDEC4F17896665009D830C /* NSDate+PMDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

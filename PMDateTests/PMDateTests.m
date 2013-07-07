@@ -8,7 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
+#import "NSDate+PMDate.h"
+
 @interface PMDateTests : XCTestCase
+
+@property (nonatomic , strong) NSDate *now;
 
 @end
 
@@ -17,20 +21,27 @@
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+    self.now = [NSDate now];
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
+    self.now = nil;
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testNow
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertNotNil(self.now, @"Now should be defined");
+}
+
+- (void)testYesterday
+{
+    NSDate *yesterday   = self.now[@"yesterday"];
+    int elapsed         = (int) [self.now timeIntervalSinceDate:yesterday];
+    int expected        = 24 * 3600;
+    
+    XCTAssertTrue( elapsed == expected , @"%d seconds should separate yesterday from today, not %d" , expected , elapsed);
 }
 
 @end
