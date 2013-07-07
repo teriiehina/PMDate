@@ -12,6 +12,9 @@
 
 + (instancetype)now;
 
+- (NSDate *)yesterday;
+- (NSDate *)tomorrow;
+
 - (instancetype)objectForKeyedSubscript:(id <NSCopying>)key;
 - (void)setObject:(id)obj forKeyedSubscript:(id <NSCopying>)key;
 

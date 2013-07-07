@@ -36,6 +36,16 @@
     return [self dateByAddingTimeInterval:interval];
 }
 
+- (NSDate *)yesterday
+{
+    return self[@"yesterday"];
+}
+
+- (NSDate *)tomorrow
+{
+    return self[@"tomorrow"];
+}
+
 - (NSTimeInterval)intervalForElaborateModifier:(NSString *)modifier
 {
     // there is certainly a more efficient way to do this

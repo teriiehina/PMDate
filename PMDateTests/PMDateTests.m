@@ -53,6 +53,24 @@
     XCTAssertTrue( elapsed == expected , @"%d seconds should separate yesterday from today, not %d" , expected , elapsed);
 }
 
+- (void)testLazyYesterday
+{
+    NSDate *yesterday   = self.now.yesterday;
+    int elapsed         = (int) [self.now timeIntervalSinceDate:yesterday];
+    int expected        = 24 * 3600;
+    
+    XCTAssertTrue( elapsed == expected , @"%d seconds should separate yesterday from today, not %d" , expected , elapsed);
+}
+
+- (void)testLazyTomorrow
+{
+    NSDate *yesterday   = self.now.tomorrow;
+    int elapsed         = (int) [self.now timeIntervalSinceDate:yesterday];
+    int expected        = -24 * 3600;
+    
+    XCTAssertTrue( elapsed == expected , @"%d seconds should separate yesterday from today, not %d" , expected , elapsed);
+}
+
 - (void)testTwoSecondsAgo
 {
     NSDate *someTimeAgo = self.now[@"2 seconds ago"];
@@ -101,7 +119,7 @@
 
 - (void)testImmutability
 {
-    XCTAssertThrows(self.now[@"anytime"] = @"anything", @"We should not be able to change the time");
+    XCTAssertThrows(self.now[@"anytime"] = @"anything", @"We should not be able to change time");
 }
 
 @end
