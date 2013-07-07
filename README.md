@@ -18,8 +18,8 @@ PMDate is a category adding subscripting to NSDate to use litteral date modifier
 
 ### Cocoapods
 
-  1. add "pod 'PMDate'" to your Podfile
-  2. run "pod install"
+  1. add `pod 'PMDate' , :git => "https://github.com/teriiehina/PMDate"` to your Podfile
+  2. run `pod install`
   3. add `#import <PMDate/PMDate.h>` to the source files where you want to use PMDate.
 
 ## Requirements
