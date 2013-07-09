@@ -7,6 +7,7 @@ PMDate is a category adding subscripting to NSDate to use litteral date modifier
 
     NSDate *now = [NSDate now];
     NSDate *yesterday = now[@"yesterday"];
+    NSDate *dayBeforeYesterday = yesterday[@"yesterday"];
     NSDate *someTimeAgo = now[@"2 weeks ago"];
 
 ## Installation
