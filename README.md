@@ -15,7 +15,7 @@ PMDate is a category adding subscripting to NSDate to use litteral date modifier
 ### Manually
 
   1. Drag'n'drop `PMDate.h` and `PMDate.m` wherever you want in your xcode project
-  2. add `#import <PMDate/NSDate+PMDate.h>` to the source files where you want to use PMDate.
+  2. add `#import "NSDate+PMDate.h"` to the source files where you want to use PMDate.
 
 ### Cocoapods
 
@@ -29,7 +29,14 @@ You should be lazy enough to use this instead of coding it yourself.
 
 ## Contributing
 
-See CONTRIBUTING file.
+If you want to add something to PMDate, it would be greatly appreciated to:
+
+  - add tests for new methods
+  - add tests for any modifications to existing methods
+  - use a 4 spaces (aka no TAB) indentation
+  - use the [Allman indentation style](http://en.wikipedia.org/wiki/Indent_style#Allman_style)
+  
+Thank you.
 
 ## Running the Tests
 
