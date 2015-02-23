@@ -5,6 +5,6 @@ xcode_scheme: PMDate
 before_install:
   - sudo easy_install cpp-coveralls
 script:
-  - xctool test -scheme PMDate -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO GCC_GENERATE_DEBUGGING_SYMBOLS=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES CURRENT_ARCH=x86_64
+  - xctool test -scheme PMDate -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO GCC_GENERATE_DEBUGGING_SYMBOLS=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES CURRENT_ARCH=i386
 after_success:
   - ./script/coveralls.sh

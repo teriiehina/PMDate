@@ -10,7 +10,7 @@ trim()
 }
 
 # declare BUILT_PRODUCTS_DIR CURRENT_ARCH OBJECT_FILE_DIR_normal SRCROOT OBJROOT 
-declare -r xctoolVars=$(xctool -project PMDate.xcodeproj -scheme PMDateTests -sdk iphonesimulator -configuration Debug CURRENT_ARCH=x86_64 -showBuildSettings | egrep '(BUILT_PRODUCTS_DIR)|(CURRENT_ARCH)|(OBJECT_FILE_DIR_normal)|(SRCROOT)|(OBJROOT)' |  egrep -v 'Pods')
+declare -r xctoolVars=$(xctool -project PMDate.xcodeproj -scheme PMDateTests -sdk iphonesimulator -configuration Debug CURRENT_ARCH=i386 -showBuildSettings | egrep '(BUILT_PRODUCTS_DIR)|(CURRENT_ARCH)|(OBJECT_FILE_DIR_normal)|(SRCROOT)|(OBJROOT)' |  egrep -v 'Pods')
 
 while read line; do
 	declare key=$(echo "${line}" | cut -d "=" -f1)
