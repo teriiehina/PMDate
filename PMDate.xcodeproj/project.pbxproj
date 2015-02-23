@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7BDEC251789647A009D830C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDEC241789647A009D830C /* Cocoa.framework */; };
 		D7BDEC2F1789647A009D830C /* PMDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BDEC2E1789647A009D830C /* PMDate.m */; };
 		D7BDEC361789647A009D830C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDEC351789647A009D830C /* XCTest.framework */; };
-		D7BDEC371789647A009D830C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDEC241789647A009D830C /* Cocoa.framework */; };
 		D7BDEC3A1789647A009D830C /* libPMDate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDEC211789647A009D830C /* libPMDate.a */; };
 		D7BDEC401789647A009D830C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7BDEC3E1789647A009D830C /* InfoPlist.strings */; };
 		D7BDEC421789647A009D830C /* PMDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BDEC411789647A009D830C /* PMDateTests.m */; };
@@ -31,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		D7BDEC211789647A009D830C /* libPMDate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPMDate.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7BDEC241789647A009D830C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D7BDEC271789647A009D830C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7BDEC281789647A009D830C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D7BDEC291789647A009D830C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -52,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7BDEC251789647A009D830C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +57,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BDEC3A1789647A009D830C /* libPMDate.a in Frameworks */,
-				D7BDEC371789647A009D830C /* Cocoa.framework in Frameworks */,
 				D7BDEC361789647A009D830C /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,7 +86,6 @@
 		D7BDEC231789647A009D830C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7BDEC241789647A009D830C /* Cocoa.framework */,
 				D7BDEC351789647A009D830C /* XCTest.framework */,
 				D7BDEC261789647A009D830C /* Other Frameworks */,
 			);
@@ -308,7 +302,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -340,7 +334,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
