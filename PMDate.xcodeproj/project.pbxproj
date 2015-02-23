@@ -38,7 +38,7 @@
 		D7BDEC2C1789647A009D830C /* PMDate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PMDate-Prefix.pch"; sourceTree = "<group>"; };
 		D7BDEC2D1789647A009D830C /* PMDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMDate.h; sourceTree = "<group>"; };
 		D7BDEC2E1789647A009D830C /* PMDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMDate.m; sourceTree = "<group>"; };
-		D7BDEC341789647A009D830C /* PMDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = PMDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BDEC341789647A009D830C /* PMDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7BDEC351789647A009D830C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D7BDEC3D1789647A009D830C /* PMDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PMDateTests-Info.plist"; sourceTree = "<group>"; };
 		D7BDEC3F1789647A009D830C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -417,6 +417,7 @@
 				D7BDEC471789647A009D830C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7BDEC481789647A009D830C /* Build configuration list for PBXNativeTarget "PMDateTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				D7BDEC4A1789647A009D830C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
