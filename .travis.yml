@@ -3,7 +3,7 @@ xcode_project: PMDate.xcodeproj
 xcode_scheme: PMDate
 
 script:
-  - xctool test -scheme PMDate ONLY_ACTIVE_ARCH=NO GCC_GENERATE_DEBUGGING_SYMBOLS=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+  - xctool test -scheme PMDate -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO GCC_GENERATE_DEBUGGING_SYMBOLS=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 
 after_success:
   - ./script/coveralls.sh
