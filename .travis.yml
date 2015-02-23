@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: PMDate.xcodeproj
+xcode_scheme: PMDate
