@@ -1,6 +1,9 @@
 PMDate
 ======
 
+[![Coverage Status](https://coveralls.io/repos/teriiehina/PMDate/badge.svg)](https://coveralls.io/r/teriiehina/PMDate)
+[![Build Status](https://travis-ci.org/teriiehina/PMDate.svg?branch=master)](https://travis-ci.org/teriiehina/PMDate)
+
 `PMDate` is a category adding subscripting to `NSDate` to use litteral date modifiers as "2 hours ago"
 
 ## Usage
